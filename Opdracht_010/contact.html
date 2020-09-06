@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Welcome on the webpage of Dutch Blackbird 13 </title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="nav">
+                <li> <a href="index.html">Home </a></li>
+                <li> <a href="about.html"> About me </a></li>
+                <li> <a href="https://www.instagram.com/je.suis.merle/" target="blank"> My Instagram Page</a></li>
+                <li> <a class="active" href="contact.html"> Contact </a></li>
+                <li> <a href="blog.html"> Blog </a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <h1>Neem contact met mij op:</h1>
+    </header>
+</body>
+
+<main class="border">
+
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+           <label> Your name: <input type="text" value="John Doe" name="name" required/></label>
+        </p>
+        <p>
+            <label> Email: <input type="email" value="Your e-mail adress" name="email" required/></label>
+        </p>
+        <p> 
+            <label>Phone number:<input type="tel" value="Phone number" name="phonenumber"/></label>
+        </p>
+        <p> 
+            <label>Age:<input type="number" value="" name="age" min="1" max="150"/></label>
+        </p>
+        <p>
+            <label> Birthdate: <input type="date" name="birthdate"/></label>
+        </p>
+        <p> 
+            <input type="radio" value="male" name="gender"/><label> Male</label>
+            <input type="radio" value="female" name="gender"/><label> Female</label>
+        </p>
+        <p>
+            <label> Favorite Cuisine: </label>
+            <input type="checkbox" name="Frans"><label>Frans</label>
+            <input type="checkbox" name="Italiaans"><label>Italiaans</label>
+            <input type="checkbox" name="Spaans"><label>Spaans</label>
+            <input type="checkbox" name="Arabisch"><label>Arabisch</label>
+        </p>
+        <p>
+            <label>Bio: <textarea name="bio"> Type here... </textarea></label>
+        </p>
+        <p>
+            <label> Select your favorite color:<input type="color" name="favcolor"/></label>
+        </p>
+        <p>
+            <label>Upload your latest recipe: <input type="file" name="file"/></label>
+        </p>
+        <p>
+            <label> Your homepage: <input type="url" name="homepage"/></label>
+        </p>
+        <p>
+            <label> Reset all the above: <button type="reset" name="reset"> Reset</button></label>
+        </p>
+        <p>
+            <label> Your recipe: <textarea name="comment"> Type here..</textarea></label>
+        </p>
+        <p>
+            <button type="submit" value="submit"></button>
+        </p>
+    </form>
+
+</main>
+
+<footer class="border">
+    Copyright: Merel Volgers 2020
+</footer>
+
+
+</html>

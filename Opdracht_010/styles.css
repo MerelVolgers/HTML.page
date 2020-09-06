@@ -1,0 +1,88 @@
+body { 
+    color: coral;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://image.freepik.com/vrije-photo/madeliefjes-patroon-op-blauwe-achtergrond_24972-185.jpg");
+} 
+
+
+.nav{
+    list-style-type: none;
+}
+
+li a{
+    display: block;
+    padding: 8px;
+    background-color: rosybrown;
+    float: left;
+}
+
+li a:hover {
+    background-color:purple;
+    color: white;
+  }
+  
+.active {
+    background-color: coral;
+  }
+
+.border {
+    border: 5px solid;
+    background-color: #ffbf80;
+    padding:10px;
+    margin:10px;
+    border: solid 5px coral;
+
+} 
+
+.list{
+    color:pink;
+    text-align: left;
+    list-style-type: circle;
+    font-size: 20px;
+}
+
+.blogcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:flex-start;
+}
+
+.blogpost {
+    width: 300px;
+    border: 5px solid coral;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blogpostspeciaal {
+    width: 300px;
+    border: 5px solid coral;
+    padding:10px;
+    margin: 10px;
+    flex-grow: 3;
+    align-self:flex-end;
+}
+
+
+@media (min-width:320px){
+
+
+    }
+
+
+@media (min-width: 768px){
+    body {
+        font-size: 25px;
+    }
+    
+}
+
+
+@media (min-width: 1024px){
+    body {
+        font-size: 20px;
+
+    }
+}
