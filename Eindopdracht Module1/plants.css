@@ -1,0 +1,188 @@
+body{
+    font-family: 'indie flower', cursive;
+    font-size: 16px;
+    color: rgb(89, 182, 88);
+    padding: 10px;
+    text-align: Center;
+}
+
+.body{
+    height: auto;
+    display:grid;
+    grid-template-columns: 10% 75% 10%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    grid-template-areas:
+    ". h ."
+    ". n ."
+    ". m ."
+    ". f .";
+}
+
+.nav{
+    grid-area: n;
+    margin:2px;
+    padding:10px;
+    position: sticky;
+    top:0;
+    background-color:white;
+    text-align:left;
+}
+
+.header{
+    grid-area: h;
+}
+
+.main{
+    grid-area: m;
+}
+
+.footer{
+    grid-area: f;
+}
+
+
+.first-plant{
+    padding:10px;
+    border:2px dotted rgb(89, 182, 88);
+    margin:2px;
+}
+
+.second-plant{
+    padding:10px;
+    border:2px dotted rgb(89, 182, 88);
+    margin:2px;
+}
+
+.third-plant{
+    padding:10px;
+    border:2px dotted rgb(89, 182, 88);
+    margin:2px;
+}
+
+.fourth-plant{
+    padding:10px;
+    border:2px dotted rgb(89, 182, 88);
+    margin:2px;
+}
+
+
+
+.navigatie-menu{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    text-align:left;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    color: green;
+}
+
+li a:hover:not(.active) {
+    color: rgb(89, 182, 88);
+  }
+
+.active {
+    color:rgb(89, 182, 88);
+  }
+
+.rechts{
+    float: right;
+}
+
+
+.title-container{
+    font-size: 16px;
+}
+
+.title{
+    margin:2px;
+    font-family: 'tangerine', serif;
+    font-size: 60px;
+}
+
+.subtitle{
+    color: salmon;
+    margin:2px;
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
+}
+
+
+.img-plant{
+    width:200px;
+    height:200px;
+    margin: 40px;
+    border-radius:50%;
+}
+
+ol li {
+    float:none;
+    list-style-type: none;
+}
+
+
+@media (min-width: 800px) {
+    body{
+        font-size:16px;
+    }
+    .body{
+        height:auto;
+        display: grid;
+        grid-template-columns: 10% auto auto auto 10%;
+        grid-template-rows: auto auto  auto auto;
+        grid-gap: 5px;
+        grid-template-areas:
+            ". n h h ."
+            ". n m m ."
+            ". n m m ."
+            ". n f f ."
+    }
+
+        .main {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 3px;
+        }
+
+        .navigatie-menu{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            position: sticky;
+            top:80px;
+        }
+
+        li {
+            float: none;
+        }
+
+        .rechts{
+            float: none;
+        }
+
+        li a {
+            display:block;
+        }
+
+
+
+}
+
+@media (min-width: 1000px){
+    body{
+        font-size: 20px;
+    }
+
+
+}
